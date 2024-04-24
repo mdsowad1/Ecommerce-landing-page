@@ -1,0 +1,215 @@
+/* reset code and common starts here */
+:root {
+    --primary-color: rgb(11,181,48);
+    --secondary-color: rgba(36,122,48,0.55);
+    --padding: 0.5rem;
+   --transition: all 0.3s;
+    --border-radius: 0.1rem;
+    --box-shadow: 0.1rem 0.2rem 0.8rem rgba(205, 202, 202, 0.5)
+}
+*{
+    box-sizing: border-box;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+   background: url(images/Flat\ Background\ Design\ Png\ Svg\ And\ Adobe\ Xd.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+.flex-center {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   justify-content: center;
+}
+.flex-space-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.btn {
+   border: none;
+   padding: var(--padding);
+   cursor: pointer;
+   text-transform: uppercase;
+   transition: var(--transition);
+}
+.btn:hover {
+   background-color: var(--secondary-color);
+}
+/* reset code and common starts here */
+ /* navbar starts here */
+#menu-icon {
+   display: none;
+}
+ nav {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+ }
+ .nav-upper {
+    min-height: 10vh;
+    background-color: var(--primary-color);
+    padding: 1rem 0;
+ }
+ .nav-list a {
+    transition: var(--transition);
+ }
+.nav-list .nav-brand {
+    color: white;
+}
+ .nav-list a:hover {
+    color: black;
+    text-decoration: overline;
+ }
+ .nav-link {
+    color: white;
+ }
+ .profile-icon {
+    width: 3rem;
+    border-radius: 50%;
+    border: 1px solid white;
+    filter: saturate(0);
+    transition: var(--transition);
+ }
+ .profile-icon:hover {
+    filter: saturate(1);
+ }
+ 
+ .nav-lower {
+    min-height: 10vh;
+    background-color: var(--secondary-color);
+    font-weight: bolder;
+ }
+ .nav-brand {
+    font-size: 2rem;
+ }
+ /* navbar end here */
+ /* header starts here */
+.header {
+   padding: 4rem 0;
+   height: 80vh;
+}
+ /* header ends here */
+
+ /* home page starts here */
+ .home-page {
+   text-align: center;
+   color: white;
+   margin-bottom: 5rem;
+   font-size: 2rem;
+   box-shadow: var(--box-shadow);
+ }
+ /* home page ends here */
+ .header {
+   padding: 4rem 0;
+   height: 80vh;
+ }
+ .banner {
+   width: 100%;
+   height: 100%;
+   flex-direction: column;
+ }
+ .banner-title {
+   font-size: 4rem;
+   color: white;
+   padding: 1rem;
+   border-radius: var(--border-radius);
+ }
+ .fetures {
+   width: 100%;
+ }
+ .feture {
+   background-color: rgba(11,181,48,0.7);
+   color: white;
+   border-radius: var(--border-radius);
+   padding: 1rem;
+   width: 15rem;
+   flex-direction: column;
+ }
+ .feture-icon {
+   font-size: 3rem;
+ }
+ /* footer starts here */
+ .footer {
+   background-color: var(--primary-color);
+   padding: 1rem;
+   min-height: 10vh;
+   color: white;
+   font-size: 1.1rem;
+ }
+.footer-input {
+   border: none;
+   padding: var(--padding);
+   width: 20rem;
+}
+ /* footer ends here */
+
+ @media screen and (max-width: 992px) {
+    
+    .banner-title {
+      font-size: 2.5rem;
+      color: white;
+      padding: 3rem;
+      border-radius: var(--border-radius);
+  }
+ }
+ @media screen and (max-width: 768px) {
+    
+ }
+ @media screen and (max-width:768px) {
+   .flex-space-around {
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem 0px;
+  }
+  #menu-icon {
+    display: block;
+    text-align: center;
+    margin: 1rem;
+    cursor: pointer;
+  }
+  .hidden {
+    display: none;
+  }
+ }
+ 
+ @media screen and (max-width: 600px) {
+   .flex-space-around {
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem 0px;
+  }
+  #menu-icon {
+    display: block;
+    text-align: center;
+    margin: 1rem;
+    cursor: pointer;
+  }
+  .hidden {
+    display: none;
+  }
+  .home-page {
+   text-align: center;
+   color: white;
+   margin-top: 2rem;
+   margin-bottom: 3rem;
+   font-size: 2rem;
+   box-shadow: var(--box-shadow);
+ }
